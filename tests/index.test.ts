@@ -1,11 +1,10 @@
 
 // const arr: string[] = ["cat", "dog", "bat"];
 
-import {Iterm} from "../src";
+import {iterm} from "../src";
 
 describe("Test The Method Of Iterm", () => {
     test("getPreferencesSync", () => {
-        let iterm = new Iterm();
         try {
             let preferences = iterm.getPreferencesSync();
             expect(preferences.DimInactiveSplitPanes).toBeTruthy();
@@ -14,7 +13,6 @@ describe("Test The Method Of Iterm", () => {
         }
     });
     test("getPreferences", async () => {
-        let iterm = new Iterm();
         try {
             let preferences = await iterm.getPreferences();
             expect(preferences.DimInactiveSplitPanes).toBeTruthy();

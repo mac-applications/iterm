@@ -22,8 +22,7 @@
   "author": "Wang Liang <850598163@qq.com>",
   "license": "ISC",
   "devDependencies": {
-    "@liangshen/plist-cli": "^1.0.3",
-    "@liangshen/tsconfig": "^1.0.4",
+    "@liangshen/plist-cli": "^2.0.1",
     "@rollup/plugin-typescript": "^11.0.0",
     "@types/jest": "^29.4.0",
     "@types/node": "^18.0.0",

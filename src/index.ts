@@ -7,7 +7,6 @@ export class Iterm extends App<ItermPreferences> {
         super(`${os.homedir()}/Library/Preferences/com.googlecode.iterm2.plist`);
     }
 }
-const iterm = new Iterm();
-export default iterm;
+export const iterm = new Iterm();
 
 export {ItermPreferences}
