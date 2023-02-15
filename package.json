@@ -1,6 +1,6 @@
 {
   "name": "@mac-applications/iterm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "types": "./lib/index.d.ts",
   "main": "./lib/index.cjs.js",
