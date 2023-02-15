@@ -1,7 +1,25 @@
 
 // const arr: string[] = ["cat", "dog", "bat"];
 
-describe("测试Iterm方法功能", () => {
-    test("测试log", () => {
+import {Iterm} from "../src";
+
+describe("Test The Method Of Iterm", () => {
+    test("getPreferencesSync", () => {
+        let iterm = new Iterm();
+        try {
+            let preferences = iterm.getPreferencesSync();
+            expect(preferences.DimInactiveSplitPanes).toBeTruthy();
+        } catch (e: any) {
+            expect(e.message).toContain('no such file or directory');
+        }
+    });
+    test("getPreferences", async () => {
+        let iterm = new Iterm();
+        try {
+            let preferences = await iterm.getPreferences();
+            expect(preferences.DimInactiveSplitPanes).toBeTruthy();
+        } catch (e: any) {
+            expect(e.message).toContain('no such file or directory');
+        }
     });
 });

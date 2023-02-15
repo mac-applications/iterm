@@ -35,6 +35,6 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@mac-apps/core": "^1.0.1"
+    "@mac-applications/core": "^1.0.0"
   }
 }

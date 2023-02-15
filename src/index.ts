@@ -1,6 +1,6 @@
 import os from "os";
 import {ItermPreferences} from "./iterm-preferences";
-import App from "@mac-apps/core";
+import App from "@mac-applications/core";
 
 export class Iterm extends App<ItermPreferences> {
     constructor() {
