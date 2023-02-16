@@ -1,7 +1,7 @@
 
 // const arr: string[] = ["cat", "dog", "bat"];
 
-import {iterm} from "../src";
+import iterm from "../src";
 
 describe("Test The Method Of Iterm", () => {
     test("getPreferencesSync", () => {
